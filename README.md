@@ -1,1 +1,1 @@
-![joseph](./my picture/picture.jpg)
+![Alt text](./my picture/picture.jpg)
