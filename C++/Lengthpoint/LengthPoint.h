@@ -20,17 +20,15 @@ public:
 class LengthPoint : public Length
 {
 private:
-	double p;
+	int point;
 
 public:
-	LengthPoint(int m)	// constructor
-	{
-		Length::SetMili(m);
-		p = Length::GetInch() * 72;
-	}
+	LengthPoint(int p) : point(p) {}	// constructor
 
-	double GetPoint() { return p; }
-	void OutPoint() { printf("±æÀÌ = %fpoint\n", GetPoint()); }
+	double GetInch() { return (double)point * 1/72; }	// point -> Inch
+	double GetMili() { return GetInch() * 25.4; }		// Inch -> Mili
+	void OutInch() { printf("%fInch\n", GetInch()); }
+	void OutMili() { printf("%fMili\n", GetMili()); }
 };
 
 #endif
