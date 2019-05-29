@@ -34,7 +34,11 @@ void delete_node(TreeNode **root, element key)
 {
 	TreeNode *p, *child, *succ, *succ_p, *t;
 
-	/* 채우기 */
+	/* 채우기 
+1) 단말 노드인 경우
+2) 하나의 자식만 가지는 경우
+3) 두 개의 자식을 가지는 경우
+*/
 
 }
 
